@@ -1,0 +1,188 @@
+\chapter{Introduction}
+\label{chap:introduction}
+\marginnote{\footnotesize Movement and perception are major brain functions}
+Important human brain functions involve emotions, thought and cognition, language and sensory perception, and therefore are major areas of research in cognitive neurosciences and psychology. However, another major component is \emph{movement}. Movement is not only important to go from one place to another. Instead, without movement, it is not possible to express feelings and gestures, or to speak and communicate. Also, we cannot visually perceive the world without the movements of the eye. In Wolpert's \citeyear{Wolpert2011TED} line of argumentation, movement is one of the core functions that the brain was designed for, or the brains of species in general were designed for. Almost all aspects of our lives involves some type of movement, e.g., movement of limbs and fingers, movements of inner organs such as lungs and heart, or movement of facial muscles and the tongue. Even in relatively passive situations, such as reading \cite{Rayner1998} or watching television \cite{Tseng2013}, we extensively move our eyes in order to perceive, not only the real world, but also during sleep and imagery \cite{Brandt1997}.
+Eye movements are triggered by six eye muscles working in pairs connected by three cranial nerves receiving input from a number of brain regions, some low-level subcortical regions, but also higher-level regions in the cortex. This account for the fact that eye movements can be triggered by bottom-up processes, such as by a change of a object, for example a car suddenly appears in one's field of vision, or by top-down processes, such as shift gaze towards a familiar face. An approach to investigate of eye movements, is modeling eye movements in computers. Such models have to account for both higher cortical functions such as attention but also data-driven methods such as image analysis in order to make predictions of natural, behavioral eye movements \cite{Itti2001}, but this process is complex and even though much is know about human perception, there are still many questions to be addressed in research. In conclusion, movement and visual perception, are major brain functions that are highly relevant in every day life..
+
+\marginnote{\footnotesize Fixations and saccades}
+Eye movements are strongly related to the anatomy of the eye: The fovea, a single spot on the retina has the highest density of photoreceptors forming the position of highest resolution and sharpest vision. Therefore, we constantly move our eyes to perceive a sharp surrounding world, while at the same time, objects in the periphery of the visual filed always remain unclear. Head movements are used in addition to extend the oculomotor range. During eye movements, the eye performs jumps (saccades) to attend new objects of interest and short stops (fixations). Only during fixations the  sensory input is fully processed in order to perceive the surrounding scene \cite{Bridgeman1975}. Even during a fixation, the eye never rests completely and performs minimal movements (fixational eye movements) in order to prevent neural adaption leading to perceptual fading of the scene \cite{Martinez-Conde2013}.
+
+\marginnote{\footnotesize Studying eye-head coordination}
+The fact that movement is a major brain function becomes even clearer considering a large number of neurological and psychiatric conditions that can affect movement: Parkinson's disease, multiple sclerosis, head injury, stroke, schizophrenia, depression, Alzheimer's disease, Tourette syndrome and more. The diseases can all affect the motor system showing its resulting malfunction. At the other end oft the spectrum, for example in sports, the human motor behavior remains a complex high-performance machinery, which becomes obvious in very challenging task such as hitting and catching a ball in baseball or cricket \cite{McBeath1995,Land2000}. In such tasks, predominately the motor system combined with the visual system have to perfectly perform complex tasks within hundreds of milliseconds. For example ``at bat", the batter's eyes precisely follow the ball during its trajectory, a swing is performed that hits the ball at the sweet spot, all within less than 500 ms. Here, the visual, oculomotor and motor system are highly challenged, and diseases such as schizophrenia can affect such motor and attentional task. Therefore, the present thesis investigates eye-head coordination in patients with schizophrenia. To this aim, two separate studies were conducted and presented as research articles in Chapter~\ref{chap:results} in order to find potential differences in eye-head coordination between patients with schizophrenia and healthy controls. Both studies involved an  experiment in which different type of visual targets were presented to investigate effects on behavior in terms of oculomotor and motor performance in patients with schizophrenia compared to healthy controls.
+
+\marginnote{\footnotesize Overview of the chapters}
+The thesis is structured in four chapters. Chapter \ref{chap:introduction} provides a general overview of the main topic of the present thesis: schizophrenia, the physiology of eye movements and the methods of eye tracking and eye-head tracking in particular. The main part of this thesis is Chapter~\ref{chap:results}: here, empirical research is presented in the form of three original research articles in peer-reviewed journals. The first work has been published in the \emph{Journal of Eye Movement Research} on the topic of measurement and analysis of eye-head coordination, forming the foundation for the second work. The second work involves a paper published in \emph{PLoS ONE} about abnormal eye-head coordination in patients with schizophrenia. In addition I have conducted the data analysis in a study which investigated physiological changes during the perception of classical music published in \emph{Psychophysiology}. Due to its different topic, this paper and my contributions are only briefly discussed in Chapter~\ref{chap:discussion}, which focuses as overall discussion on the first two research articles. To conclude, future perspectives are provided in the last part of the thesis (Chapter~\ref{chap:perspectives}).
+
+
+
+\section{Schizophrenia}
+\marginnote{\footnotesize Symptoms and prevalence}
+Schizophrenia is a serious psychiatric condition involving a variety of symptoms, such as delusions (wrong beliefs), hallucinations (e.g., hearing voices), loose associations, flat emotions, and motor symptoms \cite<for an overview>{vanOs2009}. Schizophrenia typically has an onset in young adulthood and starts less frequent in childhood or adolescence \cite{Clemmensen2012}. The global lifetime prevalence is 4 per 1'000 persons, and there seem to be no difference in occurrence between males and females, between urban and rural areas, and across epochs, however, developed countries may have more occurrences than less-developed countries \cite{McGrath2008}.
+
+\marginnote{\footnotesize Diagnosis}
+From a historical point of view \cite{First2009}, Emil Kraeplin (1856--1926) was among the first who observed a common pattern of hallucinations and bizarre delusions in these patients. Eugen Bleuer (1857--1937), a swiss psychiatrist, introduced the term \emph{schizophrenia}, which mean `split brain'. Bleuer's description of schizophrenia accounted for a much more heterogeneous disease, compared to Kraeplin, containing primary symptoms (profound ambivalence, looseness of associations, disturbance of affect and living in an internal, unrealistic word) and secondary symptoms (hallucinations and delusions). Nowadays, diagnosis according to DSM-IV (Diagnostic and Statistical Manual of Mental Disorders) incorporates at least two or more of the following symptoms, each present during a 1-month period: (1) delusions, (2) hallucinations, (3) disorganized speech, (4) grossly disorganized or catatonic behavior, (5) negative symptoms (i.e. affective flattening, alogia or avolition). The DSM, but also the ICD (International Classification of Diseases), define schizophrenia as a categorical diagnosis, that is, a particular individual tested either has, or has not schizophrenia according to this definition. However, patients with schizophrenia may sometimes experience very different symptoms and severity which may be better understood on a continuous symptom scale instead of in discrete categories. A widely used instrument in clinic and research is the `Positive and Negative Syndrome Scale' \cite<PANSS;>{Kay1987}, assessing the severity of a variety of symptoms, summing up the items in a positive and negative symptoms score. While positive symptoms refer to a abnormal presence of a specific behavior or state, such as hearing voices, negative symptoms refer to a specific lack, such as flat emotions. Even though such a dichotomous view improved the understanding and treatment of schizophrenia, factor analytic studies propose that schizophrenia is organized into three symptom domains: psychotic symptoms (hallucinations and delusions), disorganization symptoms (thought disorders, bizarre behavior, inappropriate affect), and negative symptoms \cite{Grube1998}. Other scales assesses language, affect and motor behavior in order to understand symptoms in relation to major brain system such as the language, limbic and motor system \cite{Strik2010}. This approach allows to link psychopathological assessment to brain activity in neurophysiology and brain imaging studies.
+
+\marginnote{\footnotesize Motor symptoms}
+The occurrence of motor symptoms is surprisingly high in schizophrenia with a prevalence rate of 12--97\% in first-episode, medication-free patients \cite{Walther2012}. Most common are neurological soft signs, dyskinesia, parkinsonims and catatonic symptoms, see Table \ref{tab:motorsymptoms} for a description. 
+However, some problems can to be addressed: first, motor symptoms can also be caused by psychopharmacological treatments, and with the rise of medical treatment in the last decades, attention has shifted towards these effects. Clinical distinction between drug-induced symptoms and disease-specific symptoms are difficult to establish. Thus, treatment with antipsychotic medication is a major limitation of the literature on the motor dysfunction in schizophrenia. Second, there is conceptual overlap, such that motor signs can be assigned to multiple categories. Third, such motor symptoms are not only present in schizophrenia but may also occur in neurological or other psychiatric conditions, for example major depression \cite{Razavi2011}. Today, studies using magnetic resonance imaging (MRI) investigate potential association between symptom severity and impaired brain function and structure by techniques such as functional magnetic resonance imaging (fMRI), arterial spin labeling \cite<ASL;>{Horn2009} and diffusion-tensor imaging \cite<DTI;>{Bracht2013,Bracht2012,Walther2011}.
+
+\begin{table}[t]
+\footnotesize
+\caption{Motor symptoms in schizophrenia (adapted from \cite{Walther2012}).}
+\begin{tabular}{p{3.5cm} p{8cm}}
+\hline\noalign{\smallskip}
+Type                     &  Description        \\
+\hline\noalign{\smallskip}
+Neurological soft signs   & Abnormalities in coordination, sensory integration and sequential motor acts, for example: gait, balance  \\
+Dyskinesia               & Abnormal, involuntary movements, for example repetitive movements of the head, mouth, face, limb, trunk, respiratory musculature                       \\
+Parkinsonims             & Resting tremor, rigidity, bradykinesia, loss of postural reflexes, flexed posture, motor blocking                        \\
+Catatonic symptoms       & Mutism, posturing, mannerisms, immobility, rigor, stereotypes, catalepsy, grimacing, waxy flexibility \\
+Psychomotor slowing & Reduced processing speed, reduced reaction times, for example present in fine motor task, drawing, and writing\\
+Negative syndrome & Loss of affective experience and expression, decreases spontaneous movements and reduced activity \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\label{tab:motorsymptoms}
+\end{table}
+
+\marginnote{\footnotesize Conclusion}
+As a concluding remark, classification systems such as the DSM definition of schizophrenia disorder, even though popular in daily clinical practice, may lack to provide meaningful information to patients and clinicians in view of subtypes, long-term prognosis and predictability of treatment outcome. Here, research in psychophysiology, brain imaging, genetics and neurobiological studies may become more important in the future to provide such information.
+
+\section{Physiology of Eye Movements}
+\marginnote{\footnotesize The nature of eye movements}
+The visual impression we have from the world is constructed by our brain's visual system, for example colors and contrast. Visible light, a small portion of a wide electromagnetic energy spectrum surrounding us, is transferred into vivid pictures and impressions, transmitted by by the light-sensitive photoreceptors of the eyes. These photoreceptors are highly specialized nerve cells forming a light-sensitive tissue in the inner of the eye, the retina (the retina has an equivalent function as the light-sensitive film of a photo camera). However, these sensory nerve cells are not equally distributed on the retina. Instead, only a single spot contains the highest density of photoreceptors: the fovea. The fovea provides the required spatial resolution to perceive a sharp, detailed image. Eye movements can direct the fovea to objects, faces or other areas of interest within the visual field, a process called foveation. Therefore, underlying nature of eye movements is closely connected to the anatomy of the eye, or the architecture of the retina, respectively. Eye movements are important to perceive the visual scenery of the world surrounding us. In humans, the eyes constantly move to scan the visual environment.
+
+\marginnote{\footnotesize Extraocular muscles}
+During eye movements, the eye performs successive jumps and stops, called saccades and fixations. A fixation usually lasts for 100 ms or longer, during this period, visual information is processed from the retina to the visual system in the brain. A saccade lasts for a few tens of milliseconds, depending on its size, and little or no visual perception occurs in that time \cite{Bremmer2009}. Eye movements are controlled by 3 antagonistic pairs of muscles (extraocular muscles): the lateral and medial rectus muscles, the superior and inferior rectus muscles, and the superior and inferior oblique muscles. These muscle pairs can move the eye in 3 axes: horizontal, vertical and torsional. Horizontal movements are movements towards the nose (adduction) or away from the nose (abduction) and are entirely controlled by the medial or the lateral rectus muscles, respectively. Vertical movements, upwards (elevation) and downwards (depression), are controlled by the superior and inferior rectus muscles as well as by the oblique muscles \cite[p. 436]{Purves2012}. For elevation, the superior rectus and the inferior oblique are used, for depression, the inferior rectus and the superior oblique are used. However, when the eye is abducted, the rectus muscles (inferior and superior) are the main vertical movers, when the eye is adduced, the oblique muscles are the main vertical movers. The extraocular muscles are innervated by 3 motor cranial nerves that connect to their originating subcortical nuclei: the abducens, the trochlear and the oculomotor nerve (Table~\ref{tab:eyemuscles}). Beside the extraocular muscles, the oculomotor nerve also controls the levator muscles of the eyelid, the ciliary muscles to change the shape of the lense (accommodation reflex) and the ciliary muscles to constrict the pupil in bright light (pupillary reflex). The trochlear nerve, compared to the others, innervates its destination muscle on the contralateral side.
+
+\begin{table}
+\footnotesize
+\caption{Innervation and action of the extraocular muscles.}
+\begin{tabular}{llll}
+\hline\noalign{\smallskip}
+Muscles              &  Cranial Nerve & Nucleus & Action \\
+\hline\noalign{\smallskip}
+Rectus               &                &   &      \\
+\hspace{1em} lateral &  Abducens (IV) & Abducens (Ponds) & Abduction\\
+\hspace{1em} medial  &  Oculomotor (III) & Oculomotor (Midbrain) & Adduction \\
+\hspace{1em} superior&  Oculomotor (III) & Oculomotor (Midbrain) & Elevation\\
+\hspace{1em} inferior&  Oculomotor (III) & Oculomotor (Midbrain) & Depression\\
+\hline\noalign{\smallskip}
+Oblique              &                &     &    \\
+\hspace{1em} superior& Trochlear (IV)&  Trochlear (Midbrain)    & Depression   \\
+\hspace{1em} inferior& Oculomotor (III) & Oculomotor (Midbrain) & Elevation\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\label{tab:eyemuscles}
+\end{table}
+
+\marginnote{\footnotesize Types of eye movements}
+Some decades ago, Alfred Yarbus, a russion physiologist, was among the first who investigated and measured eye movements \cite{Tatler2010}. In his pioneering work, Yarbus displayed scanpaths during viewing of images. During viewing, successive fixation and saccades were performed, summing up to an overall scanpath revealing a fixational pattern on the images, indicating that distinct features such as the eyes, the nose and the mouth are the parts containing most of the fixations. During picture viewing, usually saccades are performed. However, these are not the only type of eye movements. There are five types of eye movements \cite[p. 438]{Purves2012}, three for gaze shifts: saccades, smooth pursuit movements, and vergence movements; on the other hand the vestibulo-ocular and the optokinetic reflex perform gaze stabilization. Their functions are described in Table~\ref{tab:eyemovements}.
+
+\begin{table}
+\footnotesize
+\caption{Types of eye movements and their function.}
+\begin{tabular}{p{3.5cm} p{3cm} p{4cm}}
+\hline\noalign{\smallskip}
+Type              &  Control & Function \\
+\hline\noalign{\smallskip}
+Gaze shift               &                &         \\
+\hspace{1em} Saccades &  Voluntary and reflexive & Change of gaze position\\
+\hspace{1em} Pursuit  &  Voluntary & Tracking of  moving objects  \\
+\hspace{1em} Vergence &  Reflexive & Convergence: Align close and distant targets on the fovea\\
+\hline\noalign{\smallskip}
+Gaze stabilization        &                &         \\
+\hspace{1em} Vestibulo-ocular reflex &  Reflexive &  Compensate head movements    \\
+\hspace{1em} Optokinetic reflex & Reflexive & Combination of saccades and smooth pursuit to track large-scale movements \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\label{tab:eyemovements}
+\end{table}
+
+\marginnote{\footnotesize Saccadic latency}
+Looking at a picture or landscape usually involves saccades as the major type of eye movements. Also in the experiments presented in Chapter \ref{chap:results}, saccades are the main eye movements performed by the participants, although vestibulo-ocular reflexes may also occur because participants turn their head in these experiments. The primary goal of saccades is to change direction of gaze towards a new target of interest. However, there is a temporal lag preceding the initiation of the saccade which is used to resolve the two following tasks: the direction of the saccade and is amplitude is computed in order to hit the target, this is also known as ballistic process because no correction can be made if the target moves during the execution of the saccade. Instead, a second and smaller corrective saccade is conducted. The time to prepare the saccade, the saccadic latency, last for about 200 ms, which could be replicated in our experiments \cite{SCHWAB2012JEMR}.
+
+\marginnote{\footnotesize Neuronal control}
+Multiple brain areas are involved in the accurate targeting of the saccadic eye movement, most importantly the frontal eye field (FEF), the superior colliculus (SC), and the paramedian pontine reticular formation (PPRF). Here, we give a shorty summary on the neural control of saccadic eye movements described by \citeA[p. 440--450]{Purves2012}:
+
+The FEF and the SC both contain a topographical map of eye movement vectors. Thus, activation of a particular spot in the FEF or the SC cause a saccade of a specified direction and amplitude. The SC contains both a sensory map of the visual field and a motor map of the which are in register, so that visual cells responding to a stimulus in a specific region are located directly above the motor cells that invoke motor commands to invoke saccades to this region in the visual field. However, this is a simplified model, the activation of neurons in the visual map is neither necessary nor sufficient to activate neurons in the motor map resulting in saccadic generation. These two layers in the SC are influenced and linked by cortical regions, for example the FEF. To illustrate just one example of a circuit, the FEF projects to the SC, which in turn projects to he PPRF. The PPRF connects to the abducens nucleus having connections to the oculomotor nucleus. As we have already seen, these two nuclei and their corresponding cranial nerves innervate the lateral and medial rectus. Thus, taking this circuit, activity in the FEF can trigger saccades in the horizontal axis in this example. Of course, this short illustration is far from a complete description of  all the circuits involved in neural control of saccades or the other types of eye movements.
+
+\section{Eye-head coordination during gaze shifts}
+\marginnote{\footnotesize Experiments allowing eye-head shifts are more naturalistic}
+In many eye movement studies, the head remains fixed, and changes in eye movements directly reflect changes in gaze position. Thus, eye position can be directly related to gaze position in space. A major argument to study eye-head coordination is to more fully target the natural capabilities of the oculomotor system \cite{Corneil2011}. Targets appearing beyond $\pm$15$^\circ$ in the periphery usually comprise a eye-head shift (i.e., an eye saccade and a head shift) towards the target position, extending the oculomotor range \cite{Proudlock2007}. It has to be noted that in eye-head shifts the underlying neuronal circuits become more complex as both systems have to be perfectly adjusted and timed to precisely land on the target. Such shifts require multiple motor system and can produce more flexible patterns of coordination. Also, ocular behavior become more diverse, for example allowing for eye movements without changing gaze position such as the vestibulo-ocular reflex. Further, eye-head shifts have large methodological implications, since the mapping from eye position to gaze-in-space position is not trivial. In conclusion, the main purpose of head movements in addition to eye movements are extending the range, stabilization of the retinal image (e.g., vestibulo-ocular reflex and optokinetic reflex). However, in addition, head movements also have the purpose of emotional expression and communicating properties, for example nodding.
+
+\marginnote{\footnotesize Properties of eye-head shifts}
+During eye-head shifts \cite<for a review>{Proudlock2007}, a variety of behavioral patterns are possible, also dependent on the experimental task. However, there are some physiological constraints, which are now briefly reported. First, the head range is limited \cite{Chen1999}: 90$^\circ$ roll, 125$^\circ$ pitch (vertical) and 150$^\circ$ yaw (horizontal). The human visual field extends to approximately 60$^\circ$ nasal, 90$^\circ$ lateral, 60$^\circ$ upwards, and 75 $^\circ$ downwards. Saccades can be up to 90$^\circ$ with a maximum speed of 750$^\circ$/s. In eye-head shifts the saccade is initiated prior to the head shift in the experiments conducted, after a saccadic latency of approximately 200 ms in which the motor commands are programmed (direction and amplitude). Then, after 50-121 ms \cite{SCHWAB2012JEMR} the head starts to turn in the same direction (head offset). When the saccade has reached the target has is completed, the eye performs an compensatory movement during fixation (vestibulo-ocular reflex) in the opposite direction, perfectly compensating the not yet completed head movement, allowing gaze stabilization. These two types of eye movements are of different nature (as previously discussed, see \ref{tab:eyemovements}). While the former saccade is top-down and has a larger speed and amplitude, the later compensatory movement is reflexive, slower in speed (i.e. same speed as the head movement) and usually of smaller amplitude.  However, different patterns may occur, for example the head movement starts prior to the eye [cite].
+
+\begin{table}
+\footnotesize
+\caption{Overview of findings in patients with schizophrenia.}
+\begin{tabular}{p{2.5cm} p{2.5cm} p{8.5cm}}
+\hline\noalign{\smallskip}
+Type of paradigm      & Abnormality & References \\
+\hline\noalign{\smallskip}
+
+Antisaccade task      & Higher error rates, longer antisaccade latency       &  \citeA[F]{Calkins2003}, \citeA{Campanella2009}, \citeA[F]{Crawford1998}, \citeA{Ettinger2005}, \citeA{Fukushima1988}, \citeA{Fukushima1990}, \citeA{Hutton2006}, \citeA{Kallimani2009}, \citeA{Kang2011}, \citeA{Levy2008}, \citeA{Light2012}, \citeA{Mazhari2011}, \citeA[R]{Nieman2007}, \citeA{Nkam2001}, \citeA{ODriscoll1998}, \citeA{Petrovsky2009}, \citeA{Reilly2008a}, \citeA{Reuter2005}, \citeA[F]{Thaker2000}, \citeA[F]{Zanelli2009} \\ \\
+
+Natural viewing        &  Reduced scanpaths, fewer number of fixations, neglecting salient visual features    &  \citeA{Beedie2011}, \citeA{Beedie2012}, \citeA{Egana2013}, \citeA{Green2003}, \citeA{Green2008}, \citeA{Loughland2002}, \citeA{Loughland2002a}, \citeA[F]{Loughland2004}, \citeA{Manor1999}, \citeA{Minassian2005}, \citeA{Nishiura2007}, \citeA{Suzuki2009}, \citeA[F]{Takahashi2008}, \citeA{Tonoya2002}, \citeA{Williams1999}  \\ \\
+
+Smooth pursuit       &  Corrective saccades (back-up, catch-up), reduced gain       & \citeA{Beedie2012}, \citeA{Benson2012}, \citeA{Calkins2003}, \citeA{Ivleva2013}, \citeA{Kallimani2009}, \citeA{Lencer2008}, \citeA[S]{Lenzenweger2006}, \citeA{Nagel2012}, \citeA{Nkam2001}, \citeA{Nkam2010}, \citeA{ODriscoll1998}, \citeA[F]{Ross2002}, \citeA{Schwartz1995}, \citeA[S]{Siever1984}, \citeA[S]{Siever1994}, \citeA[S]{Smyrnis2007}, \citeA{Smyrnis2011}, \citeA{Spering2013}, \citeA[R]{vanTricht2010}    \\ \\
+
+Eye-head coordination & longer saccade and head latency, longer eye-head offset, more head movements & \citeA{Fukushima1990}, \citeA{SCHWAB2013PLOS} \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\begin{flushleft}
+F: Studies involving first-degree relatives of patients with schizophrenia.
+R: Studies involving subjects at high-risk for developing psychosis.
+S: Studies involving groups with schizotypal personality.
+\end{flushleft}
+\label{tab:abnormal}
+\end{table}
+
+\section{Overview of abnormal eye movements in schizophrenia}
+Many studies report abnormal eye movements in schizophrenia in different types of experimental paradigms, most often: Antisaccade task, natural viewing and smooth pursuit. Table \ref{tab:abnormal} provides a literature overview of oculomotor findings in schizophrenia for these paradigms.
+
+\marginnote{\footnotesize Antisaccade task}
+In anti-saccade tasks \cite<for a review, see>{Munoz2004}, a fixation point is presented and after a moment, a second appears at another position. Subjects require to make a saccade in the opposite direction away from the second fixation point, rather than towards it. This task is suitable to investigate the voluntary control of eye movements. In schizophrenia, two major finding are prominent in the antisaccade tasks: prolonged reaction times and increased error rates by conducting a saccade toward the second fixation point. Since the second fixation point can trigger an bottom-up pro-saccade, this process needs to be actively suppressed top-down in order to perform a saccade towards the opposite direction. A candidate structure to be impaired in schizophrenia is the dorsolateral prefrontal cortex (DLPFC). Impairments of the DLPFC in schizophrenia can account for these specific findings in the antisaccade task \cite{Munoz2004}, for example, patients with DLPFC lesions show reduced performance in antisaccade task similar to patients with schizophrenia.
+
+\marginnote{\footnotesize Natural viewing}
+In natural viewing, often scanpaths and fixations are investigated while subjects looked at natural scenes such as landscapes, faces or abstract geometric figures. Patients with schizophrenia often show reduced spatial scanpaths and fewer fixation, an indication for a reduced processing of the overall image information. This finding is proposed as potential diagnostic instrument \cite{Benson2012,Suzuki2009}.
+
+\marginnote{\footnotesize Smooth pursuit}
+During smooth pursuit, the eye follows a moving target and provides a stable image on the retina. Patients with schizophrenia exhibit reduced gain (inability to match pursuit velocity to target velocity) and more corrective saccades. Such findings may be caused by altered motion processing brain areas, for example V5 \cite{Nagel2012}.
+
+In sum, consistent finding in three major paradigms provide evidence for abnormal eye movements in schizophrenia. These abnormalities are also found in ultra high-risk groups, schizotypal personality, and first-degree relatives, and therefore discussed as potential endophenotype or biomarker for schizophrenia. However, only few studies investigated eye-head coordination in schizophrenia which is aimed by this theses.
+
+\section{Methods}
+\marginnote{\footnotesize Eye tracking}
+The most commonly used eye-tracking system record eye movements with a high-speed video camera (up to 200 Hz, sometimes up to 1000 Hz), known as video-oculography \cite<for a overview>{Duchowski2007}. The eye trackers are equipped with proprietary software to record eye movements and save eye position and point of regard to data files. Eye position is determined by calculating the centroid of the pupil from the image. However, usually real-world position is of interest (point of regard, or gaze). Therefore, eye positions are mapped to real-world coordinated, which requires a calibration step at the beginning of the experiment. During calibration, subjects fixate a number presented real-world points, and eye position is recorded. Now, eye-positions can be related to real-world points using a linear function, and all intermediate point are interpolated. Usually, the first cornea reflexion is also recorded to improve overall precision. Finally, the gaze positions can be exported to ASCII files for further processing.
+
+\marginnote{\footnotesize Eye-head tracking}
+In order to study eye-head coordination, additional hardware and software is required. We used a combined eye (iView X HED-MHT, SMI, Germany) and head (Fastrack, Polhemus, USA) tracking system. Gaze position, pupil position and head position were recorded (200 Hz) and saved to ASCII files using iView X (SMI, Germany). However, raw data from eye and head position have to be transformed to a higher level for meaningful data interpretation. In this thesis, the software to conduct an eye-head coordination study, and also the analysis software were developed and released with a open-source license on one of the major free software development platforms: \href{http://sourceforge.net}{SourceForge}. Different hardware systems to measure eye-head coordination, which usually consist of an eye tracker connected to a motion tracking system, are compared and discussed in Chapter \ref{chap:schwab2012jemr} \cite{SCHWAB2012JEMR}. Here, the software is shortly introduced that was developed during the thesis, including some summary statistics in Table \ref{tab:software}.
+
+\marginnote{\footnotesize Experiment software}
+PVRT \cite<Peripheral Visual Recognition Task, >{SCHWAB2010PVRT} is a software to study the physiology of eye-head coordination. The study of eye-head coordination requires a paradigm that invokes both eye and head movements. Therefore, with this software, visual targets are presented in the periphery of the visual field. In the lab, these targets are reflected by mirrors to be drawn on two lateral stimuli screens (left and right of the subject). The software is written in the Python Programming Language using the PsychoPy Framework \cite{Peirce2008,Peirce2007}. Some of the features of the software are: presentation of visual stimuli using OpenGL, Landolt Rings taken from a standardized letter chart \cite{Pelli1988}, recording of subject responses through parallel port using the PortIO library \cite{Stewart2006}, eye and head calibration, notification of the eye tracker (TTL signals) for time synchronization, and export to raw data files for further processing (e.g., in MATLAB).
+
+\begin{table}
+\footnotesize
+\caption{Software packages to study and analyze eye-head coordination.}
+\begin{tabular}{p{3cm} p{1cm} p{1.2cm} p{1cm} p{1cm} p{1.5cm} p{1cm}}
+\hline\noalign{\smallskip}
+Package                                      & No. of classes & No. of methods & Lines of Code & Licence & Platform & Language\\
+\hline\noalign{\smallskip}
+PVRT: Peripheral visual recognition task    & 16      & 82      & 1757  & GPL 3 & Linux & Python\\
+EHCA: Eye-head coordination analyzer        &  6      & 38      & 1064  & GPL 3 & Win, Mac, Linux & MATLAB\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\label{tab:software}
+\end{table}
+
+\marginnote{\footnotesize Analysis software}
+EHCA \cite<Eye-Head Coordination Analyzer, >{SCHWAB2011EHCA} is a MATLAB application to analyze eye-head coordination. Eye/head tracking data and experiment data (PVRT) is synchronized and processed, some main features steps are: data segmentation and plotting of each experimental trial, data interpolation and filtering, and eye and head movement analysis (e.g., saccade latency, eye-head offset time, saccade amplitude and duration, head amplitude and duration).
+
+\section{Objectives}
+\marginnote{\footnotesize Developing the methods}
+The thesis investigated eye-head coordination abnormalities in patients with schizophrenia. In order to conduct a eye-head coordination study, the required methodology and software had to be developed first. During pilot studies, an experiment was created including a paradigm to invoke eye-head shifts with an level of difficulty suitable for both a control group and patients of schizophrenia. An apparatus had to be constructed to present visual targets in the periphery of the visual field. A critical aspect was also the development of software, especially analysis software. Most commercial analysis software of popular eye-tracking systems are limited to the classification of data point to fixations or saccades. Even though such an analysis may be suitable for ordinary eye-tracking experiments, for example in simple picture viewing, eye-head coordination analysis has other requirements. Such data also include head data that has to be addressed and taken in relation to eye movement data. Also, during eye-head shifts multiple ocular behavioral patterns occur to be considered, not only fixations and saccade, also compensatory eye movements. Thus, the thesis consists of a methodological work, forming the basis for the patient study.
+
+\marginnote{\footnotesize Patient study}
+In the successive patient study, a sample of patients with schizophrenia and healthy controls (each n=14) was investigated in a eye-head coordination paradigm. We hypothesized that patients exhibit a different eye-head coordination pattern, e.g. saccade latencies, number of head shifts, compared to controls. We were also interested in to what extend eye-head coordination behavior is dependent on the two different tasks presented (an easy color task, and a more difficult Landolt C orientation task).
+

@@ -1,0 +1,188 @@
+%
+% University of Bern
+%
+% Master thesis template
+% Thomas Staub 14.04.2005
+% 
+% Modified for PhD thesis template for the GHS
+% Simon Schwab 11.03.2013
+
+\documentclass[11pt,a4paper,twoside,openright]{ubethesis}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[a4paper,twoside,marginparwidth=2.5cm]{geometry} % extended for marginnote
+
+\sloppy
+
+%% Additional packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% for source code highlighting
+% \usepackage{listings}
+% \lstloadlanguages{tcl, Perl}
+% \lstset{language=tcl, commentstyle=\it, basicstyle=\tiny, keywordstyle=\bf, breaklines=true, frame=single}
+
+% multiple figures with same general caption
+\usepackage{subfigure}
+\setcounter{lofdepth}{2}  
+
+% offers more possibilities in captions
+\usepackage{caption}
+
+% Commands for package caption
+% - caption
+\renewcommand{\captionfont}{\small}
+\renewcommand{\captionlabelfont}{\bfseries}
+
+% Blank Page
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+% offers rotation of figures, ...
+\usepackage{rotating}
+
+% to support correct hyphenaten, add words with -
+% \hyphenation{test-case}
+
+% If a page has no content, make it an empty page (without page numbers ....)
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+	\hbox{}
+	\thispagestyle{empty}
+	\newpage
+\fi\fi}
+\makeatother
+
+
+
+% check whether we are running pdflatex
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+\pdffalse % we are not running pdflatex
+\DeclareGraphicsExtensions{.eps}
+\else
+\pdfoutput=1 % we are running pdflatex
+\pdfcompresslevel=9     % compression level for text and image;
+\pdftrue
+\DeclareGraphicsExtensions{.pdf}
+\fi
+\ifpdf
+%to make table of contents and index appear in bookmarks
+\usepackage{tocbibind}
+%refs also as links
+\usepackage[pdftex,plainpages=false]{hyperref}
+\hypersetup
+{
+    pdfauthor={Luke Skywalker},
+    pdfsubject={PhD Thesis, University of Bern},
+    pdftitle={Thesis Title},
+    pdfkeywords={Schizophrenia, eye-head coordination, eye-movements}
+}
+%plainpages=false: enable links although page numbering is reset after title
+%backref, pagebackref]{hyperref}
+%\usepackage[pdftex]{color}
+%\usepackage[pdftex]{thumbpdf}
+\else
+%url must be escaped. (this works fine in dvi)
+\usepackage{url}
+\fi
+
+% Packages used by Simon Schwab
+\usepackage{apacite}
+\usepackage{pdfpages} % include pdf research documents in this document
+\usepackage[protrusion=true,expansion=true]{microtype} % better text alignment
+\usepackage{marginnote} % for margin notes
+
+\author{Luke Skywalker}
+\title{Title}
+\date{2013}
+% Advisor, Department and Institute
+\advisor{Prof. Dr. John Doe}
+\advaffilA{Department of Something}
+\advaffilB{Medical Faculty of the University of Bern}
+
+% Co-advisor, Department and Institute
+\coadvisor{Prof. Dr. John Doe}
+\coadvaffilA{Department of Something}
+\coadvaffilB{Medical Faculty of the University of Bern}
+\origin{my Origin, Switzerland}
+
+\begin{document}
+\pagenumbering{roman}
+\maketitle
+\thispagestyle{empty}
+\mbox{}
+
+% CC License
+\begin{center}
+    \textsf{The original document is available from the repository of the University of Bern (BORIS).\\ http://boris.unibe.ch/[enter boris number here]} \\
+    \vspace{1cm}
+    \includegraphics[scale=1]{cc/by-nc-nd.eps}
+    \\
+    \vspace{0.5cm}
+    \textsf{This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. \\
+    http://creativecommons.org/licenses/by-nc-nd/4.0/}
+\end{center}
+
+%% Faculty Dean Signature Page
+\newpage
+%\pagenumbering{roman}
+\noindent
+\textsf{\large Accepted by the Faculty of Medicine and the Faculty of Human Sciences of the University of Bern}
+\vskip 10em%
+\noindent
+\hspace{63mm} %\includegraphics[width=3.6cm]{eps/med_sign.png}
+\\
+\textsf{\large Bern, \hspace{2cm} %\includegraphics[width=2.9cm]{eps/med_date.png}
+\hspace{9mm} Dean of the Faculty of Medicine}
+\vskip 10em%
+\noindent
+\hspace{45mm} %\includegraphics[width=7.4cm]{eps/hum_sign.png} 
+\\
+\textsf{\large Bern, \hspace{2cm} %\includegraphics[width=2.1cm]{eps/hum_date.png} 
+\hspace{9mm} Dean of the Faculty of Human Sciences}
+
+\blankpage
+\tableofcontents{}
+
+% if you have some code listing, you can include a list of all your listings
+% \lstlistoflistings{}
+
+\cleardoublepage
+\setcounter{page}{1}	% Reset page numbering to 1
+\pagenumbering{arabic}	% Arabic page numbers
+
+% Advice: split up your thesis in multiple files, i.e. one file for one section
+
+\include{chapters/abstract}
+\include{chapters/introduction}
+\include{chapters/results}
+%\include{chapters/results.nopdfs}
+\include{chapters/discussion}
+\include{chapters/perspectives}
+
+%\bibliographystyle{IEEEtran}
+
+\bibliography{biblio}
+\bibliographystyle{apacite}
+
+%\listoffigures{}
+%\listoftables{}
+
+\include{chapters/acknowledgments}
+\include{chapters/cv}
+\include{chapters/publications}
+\include{chapters/declaration}
+
+\end{document}
