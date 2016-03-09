@@ -2,7 +2,7 @@
 A latex PhD thesis template for the Graduate School of the University of Bern.
 
 Features:
-* Automatic index
+* Automatic table of contents
 * Scientific articles or manusript drafts can be included as pdf in the results sections
 * Automatic reference generation based on bibtex file and citations in the text.
 * Creative Commons statement and icons, as required by the University Library
