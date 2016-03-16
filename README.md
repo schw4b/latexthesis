@@ -10,4 +10,4 @@ Features:
 * You can easily generate your thesis with or without your research papers by having two results chapters to switch between
 * Include nice margin notes
 
-See the template by clicking `mythesis.pdf` above, and a final verison [here](https://drive.google.com/open?id=0B_Iex2d05ajAUmR3RDJBTkRsNEE).
+See the template by clicking `mythesis.pdf` above, and final verison as an example [here](https://drive.google.com/open?id=0B_Iex2d05ajAUmR3RDJBTkRsNEE).
